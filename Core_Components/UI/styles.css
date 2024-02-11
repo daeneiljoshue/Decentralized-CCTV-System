@@ -1,0 +1,111 @@
+/* Base styles */
+body {
+    font-family: sans-serif;
+    color: #eee;
+    background-color: #222;
+  }
+  
+  /* Button styles */
+  .button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #444;
+  }
+  
+  .button.primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .button.primary:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Menu styles */
+  .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .menu-items li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .menu-items li:hover {
+    background-color: #444;
+  }
+  
+  /* Typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  p {
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+  /* Accessibility */
+  a,
+button {
+  color: #fff; /* or any high-contrast color */
+  background-color: #333; /* adjust for desired contrast */
+}
+  
+  body {
+    font-size: 16px; /* Base font size */
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5em; /* Adjust heading sizes as needed */
+  }
+  
+  /* Bootstrap integration (optional) */
+  @import "~bootstrap/dist/css/bootstrap.min.css";
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  /* Customize Bootstrap styles as needed */
+  
