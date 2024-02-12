@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import core components
-import Dashboard from './Core_Components/Dashboard/App';
+import Dashboard from './Core_Components/Dashboard/App.jsx';
 import CameraView from './Core_Components/Camera_View/App';
 import EventManagement from './Core_Components/Event_Management/App';
 import Settings from './Core_Components/Settings/App';
-import UserManagement from './Core_Components/User_Management/App';
+import UserManagement from './Core_Components/Event_Management/App.jsx';
+
 
 // Replace with your actual API client or service
-import { fetchUsers, fetchUserById, saveUser, ...otherApiCalls } from './api';
+import { fetchUsers, fetchUserById, saveUser} from './api';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -48,4 +49,5 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { LiveStreamPlayer } from './Camera_View/LiveStreamPlayer'; // Assuming integration
+import  LiveStreamPlayer from '../Camera_View/LiveStreamPlayer'; // Assuming integration
 
 const EventDetails = ({ event }) => {
   if (!event) return null; // Handle no event data gracefully

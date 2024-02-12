@@ -1,5 +1,5 @@
 import React from 'react';
-import LiveStreamThumbnail from './LiveStreamThumbnail'; // Assuming a separate component for thumbnails
+import LiveStreamThumbnail from '../Dashboard/LiveStreamThumbnails'; // Assuming a separate component for thumbnails
 
 const MultiCameraView = ({ cameras, onCameraSelect }) => {
   return (

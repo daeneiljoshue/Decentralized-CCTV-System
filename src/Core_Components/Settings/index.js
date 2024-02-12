@@ -1,0 +1,1 @@
+export { default } from './Settings'; // Or the actual component file name

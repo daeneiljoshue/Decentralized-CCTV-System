@@ -71,3 +71,8 @@ const App = () => {
       </div>  </div>
   );
 };
+
+// Correct:
+export default function Dashboard() {
+  // ... component logic
+}

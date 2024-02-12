@@ -1,0 +1,25 @@
+for package.json
+
+{
+    "name": "decentralized-cctv-system",
+    "version": "1.0.0",
+    "description": "User Management components for Decentralized CCTV System",
+    "main": "index.js",
+    "scripts": {
+      "start": "react-dom index.html",
+      "build": "react-scripts build", // Assuming a React build setup
+      "test": "react-scripts test", // Assuming React testing tools
+      "dev": "react-scripts start" // Assuming a React development server
+    },
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      // Add any development-only dependencies here, e.g., testing libraries
+    },
+    "optionalDependencies": {
+      // If Bootstrap is actually used, list it here
+    }
+  }
+  

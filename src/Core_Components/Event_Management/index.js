@@ -1,0 +1,1 @@
+export { default } from './Event_Management'; // Or the actual component file name

@@ -4,6 +4,7 @@ import MultiCameraView from './MultiCameraView';
 import PlaybackControls from './PlaybackControls';
 import Recordings from './Recordings';
 import ZoomPanControls from './ZoomPanControls';
+import Camera_View from '/workspaces/Decentralzed-CCTV-System/src/Core_Components/Camera_View/index.js'
 
 const fetchCameraData = async (cameraId) => {
   // Replace with your API call (e.g., using Axios)
@@ -77,3 +78,8 @@ const App = () => {
           </div>
         );
       };
+
+      // src/Core_Components/Camera_View/App.jsx
+export default function CameraView() {
+  // ... component logic
+}
