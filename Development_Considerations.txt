@@ -23,3 +23,13 @@ for package.json
     }
   }
   
+  // code for public/index.html
+  // <!DOCTYPE html>
+<html>
+<head>
+  <title>Decentralized CCTV System</title>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

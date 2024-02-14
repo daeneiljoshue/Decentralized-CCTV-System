@@ -1,5 +1,5 @@
 // Replace with your actual API base URL
-const BASE_URL = 'http://localhost:3000/api';
+const BASE_URL = 'http://localhost:3000';
 
 export const fetchUsers = async () => {
   const response = await fetch(`${BASE_URL}/users`);

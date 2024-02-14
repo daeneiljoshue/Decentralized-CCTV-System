@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 
 // Import core components
 import Dashboard from './Core_Components/Dashboard/App.jsx';
@@ -32,6 +33,12 @@ function App() {
     setUsers(users.map((u) => (u.id === updatedUser.id ? updatedUser : u)));
   };
 
+  // Inside a component or logic where you need to fetch a user by ID:
+const handleUserClick = async (userId) => {
+  const user = await fetchUserById(userId);
+  // Do something with the fetched user data
+};
+
   return (
     <BrowserRouter>
       <Routes>
@@ -49,5 +56,5 @@ function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 root.render(<App />);
