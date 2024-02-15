@@ -97,6 +97,9 @@ router.post('/users', verifyToken, async (req, res) => {
 });
 
 // Update an existing user (admin or authorized users only)
+// ... other routes
+
+// Update an existing user (admin or authorized users only)
 router.put('/users/:id', verifyToken, async (req, res) => {
   try {
     const { name, email, password, roles, permissions } = req.body;
@@ -117,4 +120,15 @@ router.put('/users/:id', verifyToken, async (req, res) => {
     if (email) user.email = email;
 
     // Update roles and permissions
-    // ... (implement
+    // ... (implement logic to update roles and permissions)
+
+    await user.save(); // Save the updated user
+    res.json(user);
+  } catch (error) {
+    console.error('Error updating user:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+}); // <-- Added the missing closing curly brace here
+
+    // Update roles and permissions
+    // ... (implement}

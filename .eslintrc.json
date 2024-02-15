@@ -1,0 +1,16 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser", // For TypeScript projects
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+      "eslint:recommended", // Base set of recommended rules
+      "plugin:@typescript-eslint/recommended" // TypeScript-specific rules
+    ],
+    "rules": {
+      // Customize rules here (optional)
+      "semi": ["error", "always"], // Enforce semicolons
+      "quotes": ["error", "single"] // Enforce single quotes
+      // ... other rules you want to enable or disable
+    }
+  }
+  
