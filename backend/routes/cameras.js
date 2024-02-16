@@ -110,6 +110,19 @@ router.delete('/cameras/:id', verifyToken, async (req, res) => {
     }
 
     // Assuming you'll have code here to actually delete the camera
+    // ... existing code within router.delete
+    // Adapt the code to your specific data access method and error handling needs.
+    // Thoroughly test the deletion functionality to ensure it works as expected and handles errors gracefully.
+
+  try {
+  // ... existing checks
+    await Camera.destroy({ where: { id: camera.id } });
+    res.status(200).json({ message: 'Camera deleted successfully' });
+ } catch (error) {
+   // Handle deletion errors (e.g., logging, specific error messages)
+    console.error(error);
+    res.status(500).json({ message: 'Failed to delete camera' });
+ }
 
   } catch (error) {
     // Handle any errors that occur during the deletion process
